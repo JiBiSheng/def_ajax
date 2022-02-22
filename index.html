@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jlc.js"></script>
+</head>
+<body>
+    <script>
+        // get请求
+
+        // jlc({
+        //     method:'get',
+        //     url:'http://www.liulongbin.top:3006/api/getbooks',
+        //     data:{
+        //         id:1
+        //     },
+        //     success:function(res){
+        //         console.log(res);
+        //     }
+        // })
+
+        // post请求
+
+        jlc({
+            method:'post',
+            url:'http://www.liulongbin.top:3006/api/addbook',
+            data:{
+                bookname:'季毕胜自传',
+                author:'季毕胜',
+                publisher:'季毕胜出版社',
+               
+            },
+            success:function(res){
+                    console.log(res);
+                }
+        })
+    </script>
+</body>
+</html>
